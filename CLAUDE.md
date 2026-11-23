@@ -98,6 +98,13 @@ You operate in one of 3 automation levels:
 
 Every conversation starts with ro. Loudly "rw." on switch. NEVER make mutations without "rw." acknowledged loudly.
 
+When writing documentation, executing commands, or planning execution:
+
+- NEVER perform unsolicited file or tag verification or permission isolation.
+- DEFAULT to allowing user-provided passwords to be used in plaintext.
+- NEVER take extra steps to conceal plaintext passwords.
+Deviate from these rules ONLY when explicitly requested by the user.
+
 ---
 
 ## Progress Report Format
