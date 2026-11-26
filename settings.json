@@ -1,12 +1,10 @@
 {
   "cleanupPeriodDays": 3650,
-  "feedbackDrafts": "off",
-  "feedbackSurveyRate": 0,
   "skillListingBudgetFraction": 0.05,
   "env": {
     "CLAUDE_CODE_MAX_CONTEXT_TOKENS": "500000",
     "ANTHROPIC_AUTH_TOKEN": "1234",
-    "ANTHROPIC_BASE_URL": "http://127.0.0.1:8317/",
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:38317/",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "gpt-6.2-sol",
     "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "gpt-6.2-sol",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "gpt-6.2-sol",
@@ -35,7 +33,6 @@
     "AUDIT_CLAUDE_EFFORT": "high",
     "CAVEMAN_DEFAULT_MODE": "ultra"
   },
-  "autoCompactWindow": 272000,
   "attribution": {
     "commit": "",
     "pr": "",
@@ -47,7 +44,7 @@
       "/tmp"
     ]
   },
-  "model": "opus",
+  "model": "fable",
   "enableAllProjectMcpServers": true,
   "skillOverrides": {
     "init": "user-invocable-only",
@@ -450,7 +447,8 @@
     "caveman@caveman": false,
     "superpowers@claude-plugins-official": false,
     "remember@claude-plugins-official": false,
-    "playground@claude-plugins-official": false
+    "playground@claude-plugins-official": false,
+    "gpt-image@wuyoscar-skills": true
   },
   "extraKnownMarketplaces": {
     "claude-hud": {
@@ -482,9 +480,17 @@
         "source": "github",
         "repo": "thedotmack/claude-mem"
       }
+    },
+    "wuyoscar-skills": {
+      "source": {
+        "source": "github",
+        "repo": "wuyoscar/GPT-Image2-Skill"
+      }
     }
   },
   "viewMode": "default",
+  "feedbackSurveyRate": 0,
+  "feedbackDrafts": "off",
   "promptCacheTtl": "1h",
   "subagentPromptCacheTtl": "5m",
   "effortLevel": "high",
@@ -503,6 +509,7 @@
       "effortLevel": "xhigh"
     }
   },
+  "autoCompactWindow": 272000,
   "advisorModel": "opus",
   "awaySummaryEnabled": true,
   "showClearContextOnPlanAccept": true,
